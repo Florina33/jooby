@@ -1,0 +1,598 @@
+html {
+	overflow: auto;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	font-weight: 400;
+	color: #707070;
+	cursor: default;
+	text-align: left;
+}
+
+.page-wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main-wrapper {
+	position: relative;
+	max-width: 1410px;
+	width: auto;
+	margin: auto;
+}
+
+.content-wrapper {
+	position: relative;
+	max-width: 1200px;
+	width: auto;
+	margin: auto;
+	/*padding: 0 15px;*/
+}
+
+/* typography
+----------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: inherit;
+	text-align: center;
+}
+
+/*h1 {*/
+	/*font-size: 28px;*/
+	/*font-weight: 300;*/
+	/*font-family: inherit;*/
+	/*margin: 0 0 1.5em;*/
+/*}*/
+
+h2 {
+	font-size: 55px;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: #0060a8;
+	margin: 0 0 1.5em;
+
+}
+
+h3 {
+	font-size: 30px;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: #0060a8;
+	margin: 0 0 1.4em;
+}
+
+h4 {
+	font-size: 20px;
+	font-family: inherit;
+	font-weight: 700;
+	color: #fefefe;
+	margin: 0 0 1.3em;
+}
+
+
+p {
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	margin-bottom: 12px;
+}
+
+ul, li {
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+a {
+	font-size: 15px;
+	color: #0060a8;
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* header
+----------------------------------------------------------------------------- */
+
+.header {
+	width: auto;
+	/*max-width: 1920px;*/
+	padding: 25px 0;
+	margin: 0 auto;
+	background: #0060a8;
+	text-align: center;
+}
+
+.header .left {
+	width: 50%;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+.header .right {
+	width: 50%;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	padding-left: 3%;
+}
+
+.header .contacts .email,
+.header .contacts .phone {
+	display: block;
+	font-size: 15px;
+	line-height: 22px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: #fff;
+	text-align: left;
+}
+
+
+@media (max-width: 600px) {
+	/*.header {*/
+		/*padding: 20px 1%;*/
+	/*}*/
+	/*.header .main-wrapper {*/
+		/*display: block;*/
+		/*text-align: center;*/
+	/*}*/
+} 
+
+@media (max-width: 380px) {
+	/*.header .phone {*/
+		/*font-size: 18px;*/
+		/*padding-right: 25px;*/
+	/*}*/
+	
+}
+
+
+/* main-menu
+----------------------------------------------------------------------------- */
+
+.main-menu {
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #fff;
+	text-align: center;
+	padding: 7px 20px 7px 120px;
+	white-space: nowrap;
+}
+
+.main-menu .menu-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	/*-webkit-justify-content: center;*/
+	/*justify-content: center;*/
+}
+
+.main-menu .menu-item {
+	display: inline-block;
+	margin: 0 15px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.main-menu .menu-item:hover,
+.main-menu .menu-item.active {
+	color: #6fb7ff;
+}
+
+
+.main-menu a {
+	display: block;
+	height: 100%;
+	color: inherit;
+	text-decoration: none;
+}
+
+/* form-search
+----------------------------------------------------------------------------- */
+
+.form-search {
+	position: relative;
+}
+
+.form-search::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	background: url("../images/icon_search.png") no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
+.form-search .input-search {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	font-style: italic;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	padding: 4px 8px 4px 35px;
+	max-width: 210px;
+	width: 100%;
+}
+
+.form-search .input-search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #fff;
+	opacity: 1; /* Firefox */
+}
+
+/* buttons-authorization
+----------------------------------------------------------------------------- */
+
+.buttons-authorization {
+	display: inline-block;
+	padding: 5px 75px;
+}
+
+.buttons-authorization .auth-item {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.buttons-authorization .auth-item::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -2px;
+	left: -34px;
+	background: url("../images/icon_login.png") no-repeat;
+	width: 22px;
+	height: 20px;
+}
+
+.buttons-authorization .auth-item a {
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+/* .buttons-authorization .auth-item.active a {
+	border: 1px solid #fff;
+	border-radius: 4px;
+} */
+
+/* menu-lang
+----------------------------------------------------------------------------- */
+
+.menu-lang {
+	padding: 5px 15px;
+}
+
+.menu-lang {
+	display: inline-block;
+}
+
+.menu-lang ul {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.menu-lang li {
+	cursor: pointer;
+}
+
+.menu-lang li ul {
+	display: none;
+}
+
+.menu-lang li.menu-item::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 9px;
+	right: -12px;
+	background: url("../images/icon_triagle.png") no-repeat;
+	width: 6px;
+	height: 4px;
+
+	-webkit-transition: all ease-in-out 0.3;
+	transition: all ease-in-out 0.3s;
+}
+
+.menu-lang li:hover::after {
+	transform: rotate(180deg);
+}
+
+.menu-lang li:hover ul {
+	display: block;
+	position: absolute;
+    top: 29px;
+    left: -11px;
+    background: #fff;
+    width: 50px;
+    padding-top: 0px;
+    z-index: 1;
+    border-radius: 3px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.menu-lang li:hover .triangle {
+	position: absolute;
+	top: 15px;
+	right: -10px;
+	z-index: 10;
+	height: 14px;
+	overflow: hidden;
+	width: 30px;
+	background: transparent;
+}
+
+.menu-lang li:hover .triangle:after {
+	content: '';
+	display: block;
+	z-index: 20;
+	width: 15px;
+	transform: rotate(45deg) translateY(0px) translatex(10px);
+	height: 15px;
+	background: #fff;
+	border-radius:2px 0px 0px 0px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.menu-lang li ul li {
+	position: relative;
+	text-align: left;
+	background: transparent;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 7px 10px;
+	z-index: 2;
+	color: #1e2945;
+	text-align: center;
+}
+
+.menu-lang li ul li span:hover, 
+.menu-lang li ul li span.active {
+	color: #035ed4;
+}
+  
+
+.header .title-main {
+	max-width: 1000px;
+	text-align: center;
+	margin: 0 auto 10px auto;
+}
+
+.menu-template {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	white-space: nowrap;
+	color: #fff;
+	text-align: center;
+	padding-right: 15px;
+}
+
+/* top-content
+----------------------------------------------------------------------------- */
+
+.top-content {
+	padding: 14px 0;
+}
+
+.top-content .logo {
+	display: inline-block;
+}
+
+
+/* menu-service
+----------------------------------------------------------------------------- */
+
+
+.menu-service {
+    /*padding: 7px 0;*/
+    text-align: center;
+}
+
+.menu-service .menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-service .menu-item {
+    display: inline-block;
+    margin: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.menu-service a {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-service li.dropdown-link > a {
+    padding-right: 10px;
+    position: relative;
+}
+
+.menu-service li.dropdown-link > a:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: -4px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #B0140E;
+}
+
+.menu-service ul.dropdown {
+    position: absolute;
+    width: 100%;
+    -webkit-transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;
+    background: #e2e2e2;
+    z-index: 10;
+    margin-top: -2px;
+    display: none;
+}
+
+.menu-service li ul li {
+    clear: both;
+    width: 100%;
+}
+
+
+
+/* bread-crumbs
+----------------------------------------------------------------------------- */
+
+
+/* map
+----------------------------------------------------------------------------- */
+
+/* contact-info
+----------------------------------------------------------------------------- */
+
+.places .place {
+	width: 33.33%;
+	padding-right: 5%;
+}
+
+/* feedback-form
+----------------------------------------------------------------------------- */
+
+
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+/* footer
+----------------------------------------------------------------------------- */
+
+.footer {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding-top: 36px;
+	background: #595959;
+	position: relative;
+}
+
+.footer .phone-services {
+	position: relative;
+	max-width: 1100px;
+	vertical-align: top;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.footer .phone-services .services-list {
+	margin: 0;
+	padding-left: 15px;
+	width: 33.33%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 15px 0;
+	border-top: 2px solid #b0b0b0;
+}
+
+.footer .phone-services .service-item {
+	vertical-align: middle;
+	margin-right: 22px;
+	margin-bottom: 20px;
+
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-justify-content: flex-startn;
+	justify-content: flex-start;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+}
+
+.footer .phone-services img {
+	align-items: flex-start;
+}
+
+.footer .phone-services a {
+	color: #fff;
+	padding-top: 5px;
+}
+
+.footer .legal {
+	font-size: 12px;
+	color: #89a8ba;
+	background: #fff;
+	padding: 15px 0 30px 0;
+	text-align: center;
+	border-top: 1px solid #4e4e4e;
+}
+
+.footer .legal a {
+	color: #137db9;
+	font-size: 14px;
+}
+
+.footer .legal a:hover {
+	color: #2496d6;
+}
+
+@media (max-width: 660px) {
+	/*.footer .phone-services {*/
+		/*-webkit-justify-content: space-around;*/
+		/*justify-content: space-around;*/
+	/*}*/
+	/*.footer .phone-services .services-list {*/
+		/*width: 50%;*/
+	/*}*/
+}
+
+@media (max-width: 400px) {
+	/*.footer .phone-services .services-list {*/
+		/*width: 100%;*/
+	/*}*/
+}
